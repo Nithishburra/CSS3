@@ -1,0 +1,78 @@
+css
+*****
+
+=>css stands for cascading styles sheets.
+
+=> css is used to apply the styles for static web pages.
+
+=> EX.
+
+1) color.
+
+2) margins.
+
+3) background-color.
+
+4) padding.
+
+5) font-family.
+------------------
+
+=> we can include "css" to webpages in 3 ways.
+
+1) style attribute.
+
+2)<style></style>
+
+3)<link>
+
+ EXAMPLES
+ *********
+demo.html
+*********
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<p style = "------------"> => using inline style sheet.
+</body>
+</html>
+
+
+
+demo.html
+*********
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+        css  => using style tag.
+   </style>
+</head>
+<body></body>
+</html>
+
+
+
+
+
+demo.html
+*********
+<!DOCTYPE html>
+<html>
+<head>
+   <link> => using External css.
+</head>
+<body></body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
