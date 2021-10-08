@@ -1,0 +1,35 @@
+<!--
+
+    id vs class
+    -----------
+
+
+    1) id should be unique.
+     
+       Ex.wrong()
+        
+        <p id="my_id">paragraph1</p>
+        <p id="my_id">paragraph2</p>
+
+
+   2) 
+
+
+     EX.correct()
+
+     <p id="id1">paragraph1</p>
+     <p id="id2">paragraph2</p>
+
+   3) we can use same class to multiple elements
+    
+     (correct)  
+     <p class="class_1">paragraph1</p>
+     <p class="class_1">paragraph2</p>
+
+  ----------------------------------------
+
+  =>  "id" attribute have more priority compared to the class attribute.
+
+  *******************************************************************
+
+-->
