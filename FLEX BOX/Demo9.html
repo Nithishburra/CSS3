@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS</title>
+        <style>
+
+          .parent{
+
+             display: flex;
+            border: 2px solid black;
+            justify-content: space-between;
+          }
+
+          .child{
+
+              border: 1px solid salmon;
+              padding: 5px;
+              margin: 5px;
+          }
+
+          .one{
+              order:1;
+              border: 2px solid yellow;
+              color: tomato;
+              flex-basis: 25%;
+          }
+
+          .two{
+               order:2;
+             background-color: turquoise;
+          }
+        </style>
+    </head>
+    <body>
+
+        <div class="parent">
+
+            <div class="child one ">One</div>
+            <div class="child two">Two</div>
+            <div class="child">Three</div>
+            <div class="child one">Four</div>
+            <div class="child ">Five</div>
+
+            <div>
+    </body>
+</html>
+
+
