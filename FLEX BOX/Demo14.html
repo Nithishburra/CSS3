@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+   <title>CSS3</title>
+    <style>
+
+        .container{
+      
+            border: 2px solid red;
+            display: flex;
+           
+           
+        }
+        
+        .child{
+
+            border: 2px solid gold;
+            padding: 5px;
+            margin: 5px;
+        }
+
+         .category-1{
+             
+             flex: 1;
+             display: flex;
+           
+         }
+
+        .category-2{
+
+           flex:1;
+           display: flex;
+           
+        }
+
+
+
+
+    </style>
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="category-1">
+              <div class="child" style="flex:2;">One</div>
+              <div class="child" style="flex:2;">Two</div>
+              <div class="child" style="flex:1;">Three</div>
+            </div>
+
+
+            <div class="category-2">
+                <div class="child" style="flex:3;">Four</div>
+                <div class="child" style="flex:1;">Five</div>
+                <div class="child" style="flex:1;">Six</div>
+            </div>
+  
+
+        </div>
+
+
+</body>
+</html>
