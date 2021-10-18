@@ -1,0 +1,47 @@
+
+<!--
+    percentage will depend on the body
+
+    viewport width will depend on the device screen.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dimensions</title>
+<style>
+.c1{
+    width: 50%;
+    background-color: brown;
+    margin-bottom: 10px;
+}
+.c2{
+    width: 50vw;
+    background-color: cornflowerblue;
+}
+.parent{
+    width: 100px;
+    border: 2px solid red;
+    margin-top: 10px;
+    
+}
+.c3{
+   width: 100px;
+   height: 25vh;
+   background-color: yellow;
+   margin-top: 10px;
+}
+</style>
+</head>
+<body>
+<div class="c1">50%</div>
+<div class="c2">50vw</div>
+<div class="parent">
+<div class="c1">50%</div>
+ <div class="c2">50vw</div>
+ <div class="c3">25vh</div>
+</div>
+
+
+</body>
+</html>

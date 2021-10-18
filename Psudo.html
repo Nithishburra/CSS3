@@ -1,0 +1,98 @@
+<!--
+    Psudo elements are
+    *******************
+
+    1)::first-line
+
+    2)::first-letter
+
+    3)::selection
+
+    4)::placeholder
+
+    5)::before
+
+    6)::after
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+h1::selection{
+
+background-color: brown;
+}
+p::first-line{
+background-color: chartreuse;
+}
+
+li::first-letter{
+background-color: red;
+font-size: 30px;
+}
+::placeholder{
+color: sandybrown;
+font-size: 15px;
+}
+.required::before{
+     color: red;
+     content:"*";
+     width: 20px;
+     height: 20px;
+     background-color: yellow;
+     display: block;
+}
+.required::before{
+     color: red;
+     content:"&";
+     width: 20px;
+     height: 20px;
+     background-color: yellow;
+     display: block;
+}
+.required::after{
+    color: blue;
+    content: "@";
+    width: 20px;
+    height: 20px;
+    background-color:wheat;
+    display: block;
+}
+
+[data-tooltip]{
+    position: relative;
+}
+
+ [data-tooltip]:hover::after{
+     content: attr(data-tooltip);
+     position: absolute;
+     top:25px;
+     left: 20px;
+     background-color: tomato;
+     padding: 5px;
+    border: 1px solid yellow ;
+ }
+
+</style>
+</head>
+<body>
+<label class="required">User name</label> &nbsp;&nbsp;&nbsp;&nbsp;
+<input type="text" placeholder="Enter name">
+ <button data-tooltip="hover me">Click me</button>
+<h1>Ashok IT</h1>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum perferendis tenetur numquam vitae incidunt necessitatibus consequuntur aut repudiandae? Exercitationem officiis dicta sint sed iusto quisquam error delectus iure excepturi. Corporis nesciunt soluta asperiores accusantium nobis reiciendis maxime atque alias ad repellat earum similique, magnam libero aperiam nostrum in inventore velit dolores nulla numquam consequatur sed mollitia. Reiciendis, iure molestias. Perferendis nihil, fuga dolor ex, molestias aliquam dicta libero et corrupti voluptatum nobis similique, placeat nesciunt. Qui consequuntur ea beatae iste, recusandae ullam sit dolor sunt illum ipsa dolore quam, voluptas animi reiciendis placeat corrupti et eaque explicabo. Alias deleniti magnam corrupti libero dolores! Asperiores labore eos doloremque quidem itaque! Obcaecati repudiandae aperiam, suscipit assumenda ratione enim consequuntur est natus sunt velit nesciunt labore ea unde, rerum totam id accusamus saepe vero esse ducimus facilis delectus quam necessitatibus? Dolorem veniam earum impedit, quidem mollitia blanditiis, natus eos magnam sint porro non suscipit exercitationem iste velit perspiciatis placeat adipisci dolorum voluptatem molestias nulla! Praesentium inventore veritatis, quibusdam quos aperiam commodi sequi, veniam temporibus pariatur libero reiciendis magnam iusto quaerat labore dolorum dolor aliquam necessitatibus ad, animi possimus eos sed eveniet. Consequuntur soluta deleniti officiis recusandae nesciunt inventore sapiente optio itaque ducimus odio?</p>
+</p>
+
+<ul>
+<li>Hello-1</li>
+<li>Hello-2</li>
+<li>Hello-3</li>
+<li>Hello-4</li>
+<li>Hello-5</li>
+<li>Hello-6</li>
+</ul>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, itaque fuga ut officiis voluptate ratione temporibus hic dolorum? Deserunt saepe reiciendis assumenda optio nemo et, voluptatem, unde dolore ut totam officiis voluptatibus magnam itaque blanditiis sapiente nesciunt! Distinctio reiciendis accusamus repudiandae excepturi sunt optio quas, fugiat officia omnis quidem quod illum in quisquam magni iure dolor sapiente perferendis rem sint? Ab ducimus dolorum minus officiis! Cumque vitae rerum nemo iure voluptatibus quia ullam amet, ducimus doloribus id consequuntur mollitia vel nostrum sunt error officiis eligendi excepturi dicta blanditiis, molestias doloremque sint! Soluta quos repellendus unde at? Pariatur incidunt laudantium enim sapiente sequi. Fuga minus adipisci delectus laboriosam, reiciendis repellendus itaque iure odit omnis tempora harum fugit consectetur, magnam numquam cumque molestiae vitae quod dignissimos cupiditate voluptatem! Vitae laudantium corrupti neque nesciunt voluptas praesentium. Commodi, ad totam itaque iure alias facere voluptatum quae soluta reiciendis dolorum quidem ipsam, nostrum sint facilis similique aliquid adipisci amet, cumque inventore quibusdam veritatis modi. Aperiam unde dolores perspiciatis possimus veniam velit nisi, minus pariatur nesciunt sint, adipisci, voluptatum expedita temporibus numquam voluptate impedit eum consectetur ipsam architecto! Mollitia quo non totam sint a tempore quod reprehenderit error praesentium. Quis beatae dicta tenetur minima blanditiis saepe?</p>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!--
+    percentage will depend on the parent 
+
+    px will always depend on the body
+
+    percentange is position relative
+
+    px is position absolute
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+ <title> Dimension</title>
+ <style>
+.c1{
+ width: 50%;
+ background-color: red;
+margin-bottom: 10px;
+}
+.c2{
+width: 100px;
+background-color: yellow;
+ }
+.parent{
+ width:140px;
+ height:140px;
+border: 1px solid black;
+margin-top: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="c1">50%</div>
+<div class="c2">100px</div>
+
+<div class="parent">
+<div class="c1">50%</div>
+<div class="c2">100px</div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!--
+    rem will depend always on the body
+
+    em will depend on the parent
+
+    1rem is equal to the 16px;
+
+    1em is equal to the 16px;
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dimensions</title>
+<style>
+ 
+ .c1{
+     font-size: 1rem;
+ }
+ .c2{
+     font-size:1em;
+ }
+
+ .c3{
+     font-size:2rem;
+ }
+ .c4{
+     font-size: 2em;
+ }
+
+ .parent{
+     font-size: 30px;
+ }
+
+</style>
+</head>
+<body>
+<div class="c1">1rem</div>
+<div class="c2">1em</div>
+<div class="c3">2rem</div>
+<div class="c4">2em</div>
+
+<hr>
+
+<div class="parent">
+<div class="c1">1rem</div>
+<div class="c2">1em</div>
+<div class="c3">2rem</div>
+<div class="c4">2em</div>
+
+</div>
+
+</body>
+</html>
+
