@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>CSS GRIDBOX</title>
+    <style>
+
+        .parent{
+            background-color: slategrey;
+            padding:1em;
+        }
+        .parent>div:nth-child(odd){
+            background-color: springgreen;
+        }
+
+        .parent{
+            display: grid;
+            /*grid-template-columns: 1fr 1fr 1fr;
+           grid-column-gap:1em;*/
+           grid-template-columns: repeat(3,1fr);
+           /*grid-column-gap:1em;
+           grid-row-gap:1em;* if we want to use this two gaps that is column and row then we recommended to use grid gap*/
+
+           grid-gap:1em;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="parent">
+
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem soluta reiciendis, quae natus at error quo voluptas itaque eveniet inventore iste, ea quos eaque molestias voluptate eius repellat animi officiis consequuntur nulla distinctio tempore eligendi, excepturi blanditiis. Impedit quos id ab cumque fuga repudiandae magnam recusandae repellat, molestiae suscipit dicta corrupti aliquid voluptatum dolorem saepe quod provident? Recusandae est tempore repellendus, deserunt aperiam fugiat voluptate sequi labore et amet eos suscipit alias veritatis, quidem expedita sapiente nam iusto porro fuga officiis. Ad adipisci facilis voluptas sequi tempora eum eos saepe suscipit voluptatem laboriosam, sit, veniam minima dolor dolorum praesentium error.
+            </div>
+
+         <div>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui voluptatum quas mollitia nemo tempora unde. In, laudantium alias! Et, expedita nulla. Eligendi expedita eveniet aliquid, nam qui quibusdam quia, tenetur error neque dignissimos incidunt perspiciatis accusamus aspernatur animi blanditiis, deserunt exercitationem ex fuga distinctio deleniti. Porro enim dignissimos, eos animi quibusdam, amet et labore totam sit vel explicabo rem fugiat recusandae quo molestias dolores laboriosam cupiditate illo, provident eius? Ipsum tempore itaque nesciunt repellat atque! At, eligendi, quisquam non animi perspiciatis labore doloremque autem ducimus eum quaerat adipisci dignissimos itaque dolore, culpa corporis quia quod nobis nisi omnis? Voluptates?
+         </div>
+
+
+       <div>
+           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta facere nemo iusto ullam repudiandae nisi reiciendis maxime vero, similique ducimus ex, voluptas incidunt atque assumenda accusantium, quis quasi cum fugiat. Ea ullam inventore, tempora doloremque aperiam laborum possimus doloribus non perferendis at asperiores quaerat dolor nesciunt molestias in, totam autem dolorum itaque quibusdam distinctio ab maiores? Perspiciatis laboriosam possimus cupiditate architecto ab mollitia harum iure quidem consequatur tempora! Odit repudiandae aliquam dolores ducimus non! Nesciunt sapiente nulla mollitia ab suscipit sunt, ipsa modi. Voluptates alias suscipit ducimus, numquam asperiores quas mollitia? Expedita totam nemo cum sit similique alias doloremque sed.
+       </div>
+
+       
+       <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta facere nemo iusto ullam repudiandae nisi reiciendis maxime vero, similique ducimus ex, voluptas incidunt atque assumenda accusantium, quis quasi cum fugiat. Ea ullam inventore, tempora doloremque aperiam laborum possimus doloribus non perferendis at asperiores quaerat dolor nesciunt molestias in, totam autem dolorum itaque quibusdam distinctio ab maiores? Perspiciatis laboriosam possimus cupiditate architecto ab mollitia harum iure quidem consequatur tempora! Odit repudiandae aliquam dolores ducimus non! Nesciunt sapiente nulla mollitia ab suscipit sunt, ipsa modi. Voluptates alias suscipit ducimus, numquam asperiores quas mollitia? Expedita totam nemo cum sit similique alias doloremque sed.
+     </div>
+
+
+
+        </div>
+    </body>
+</html>
+
+
+

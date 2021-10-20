@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS3 GRIDBOX</title>
+        <style>
+
+           .wrapper{
+               background-color: yellow;
+               padding:1em;
+           }
+            .wrapper>div:nth-child(odd){
+
+                background-color: red;
+            }
+
+            .wrapper{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-gap:1em;
+                /*grid-auto-rows: 300px; in this property will affect all the other prorperties so inorder to over come this we have to use below one*/
+             
+                 grid-auto-rows: minmax(100px,auto);
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+
+       <div class="wrapper">
+
+         <div>Lorem ipsum dolor sit amet consectetur.</div>
+         <div>Lorem ipsum dolor sit amet consectetur.</div>
+         <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus odio iusto laudantium accusamus enim voluptate quaerat explicabo? Quaerat accusamus in vitae sint unde nam, obcaecati aliquam sapiente. Voluptatibus quod ab eius illum autem fugit dolore nobis laborum omnis fuga consequuntur neque aperiam iste voluptatum, id nesciunt aliquid dolor ex velit iure doloribus? Cupiditate autem asperiores delectus excepturi ipsam corporis explicabo architecto molestiae expedita ut culpa eligendi voluptatum illo optio sunt, placeat, accusantium minus quaerat harum facere distinctio et aut rerum. Rerum accusamus laborum repellendus! Veritatis rem et, dolor quisquam expedita illo cupiditate quia architecto qui aspernatur, id assumenda officiis quibusdam.
+         </div>
+         <div>Lorem ipsum dolor sit amet consectetur.</div>
+         <div>Lorem ipsum dolor sit amet consectetur.</div>
+         <div>Lorem ipsum dolor sit amet consectetur.</div>
+         <div>Lorem ipsum dolor sit amet consectetur.</div>
+
+
+ </div>
+
+ </body>
+</html>
