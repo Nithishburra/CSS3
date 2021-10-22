@@ -1,0 +1,83 @@
+<!--
+    justify-item...>means  to arrange the element in horizontal way......
+
+    align_items.....>means to arrange the elements in vertical way...
+-->
+
+
+<!DOCTYPE html>
+<html>
+ <head>
+<title>
+ Css3 Grid
+ </title>
+ <style>
+     .parent{
+         height: 100vh;
+     }
+ .parent>p{
+     border: 2px solid pink;
+     width: 100px;
+     height: 50px;
+ }
+ .parent{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-gap:1em;
+     /*justify-items:start;
+     align-items:end;*/
+
+ }
+ .parent>p:nth-child(5){
+     justify-self:end;
+     align-self:end;
+ }
+
+.parent>p:nth-child(2){
+    align-self: start;
+}
+.parent>p:nth-child(3){
+    justify-self:center;
+}
+.parent>p:nth-child(4){
+    align-self:end;
+    justify-self: center;
+}
+.parent>p:nth-child(1){
+    justify-self:center;
+    align-self:end;
+}
+ .parent>p:nth-child(6){
+     justify-self:end;
+ }
+
+ .parent>p:nth-child(9){
+     align-self: end;
+ }
+ .parent>p:nth-child(7){
+     align-self: end;
+ }
+ .parent>p:nth-child(8){
+     align-self: center;
+ }
+</style>
+</head>
+<body>
+<div class="parent">
+<p>1</p>
+<p>2</p>
+<p>3</p>
+<p>4</p>
+<p>5</p>
+<p>6</p>
+<p>7</p>
+<p>8</p>
+<p>9</p>
+</div>
+
+
+</body>
+</html>
+
+
+

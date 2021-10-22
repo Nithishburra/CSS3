@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 GRIDBOX</title>
+<style>
+
+    .parent{
+        height: 100vh;
+    }
+    .parent>div{
+        background-color:gray;
+        color: gold;
+        margin: 5px;
+        text-align: center;
+        
+    }
+   .parent{
+       display: grid;
+       grid-template-columns:1fr 2fr 1fr;
+   }
+   .header{
+       grid-column: 2/3;
+    
+   }
+   .footer{
+       grid-column: 2/3;
+      
+       
+   }
+   .left{
+        grid-column: 1/2;
+        grid-row: 1/4;
+   }
+   .right{
+      grid-column:3/4;
+      grid-row:1/4;
+   }
+</style>
+</head>
+<body>
+<div class="parent">
+    <div class="header">Header</div>
+    <div class="left">Leftmenu
+     <img src="pic4.webp" style="height: 500px; width:380px;">
+    </div>
+    <div class="body">body</div>
+    <div class="right">Rightmenu
+     <img src="pic3.webp" style="height: 500px; width:380px;">
+    </div>
+    <div class="footer">Footer</div>
+
+</div>
+</body>
+</html>
