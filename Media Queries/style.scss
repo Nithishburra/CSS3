@@ -1,0 +1,84 @@
+
+/* break points are six types
+
+1) x-small
+
+2) small
+
+3) medium
+
+4) large
+
+5) x-large
+
+6) xx-large
+*/
+
+$color-1:red;
+$color-2:blue;
+$color-3:yellow;
+$color-4:green;
+$color-5:grey;
+
+
+$small:576px;
+$medium:768px;
+$large:992px;
+$xlarge:1200px;
+$laptop:1600px;
+
+
+
+*{
+    margin:0px;
+    padding:0px;
+
+body{
+    font-size: 20px;
+    box-sizing: border-box;
+
+}
+}
+.parent{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#child{
+    position: absolute;
+    top:60%;
+    left:50%;
+    transform: translate(-50%);
+}
+
+
+@media(max-width:$laptop){
+    .parent{
+        background-color: $color-5;
+    }
+}
+
+
+@media(max-width:$xlarge){
+    .parent{
+        background-color: $color-1;
+    }
+}
+
+@media(max-width:$large){
+    .parent{
+        background-color: $color-2;
+    }
+}
+
+@media(max-width:$medium){
+    .parent{
+        background-color: $color-3;
+    }
+}
+@media(max-width:$small){
+    .parent{
+        background-color: $color-4;
+    }
+}

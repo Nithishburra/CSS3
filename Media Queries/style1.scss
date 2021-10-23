@@ -1,0 +1,25 @@
+*{
+    margin:0px;
+    padding:0px;
+   
+
+body{
+    font-size: 30px;
+    box-sizing: border-box;
+
+}
+}
+
+.parent{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+#child{
+    position: absolute;
+    top:55%;
+    left:50%;
+    transform: translate(-50%);
+}
