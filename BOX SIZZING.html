@@ -1,0 +1,40 @@
+<!--
+    1)content box-> the width and height are included the only content and border and padding are not included in the content box.
+
+    2)border box -> the padding and border are included in the width and height of border box.
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+ BOX SIZING CSS3
+</title>
+<style>
+ div{
+     width:160px;
+     height: 80px;
+     border: 8px solid olive;
+     padding:20px;
+ }
+#A{
+   box-sizing: content-box;
+
+   /* width: 160+(2*20)+(2*8) =216px
+      height: 80+(2*20)+(2*8) =136px */ 
+}
+#B{
+    box-sizing: border-box;
+
+    /* width: 160-(2*20)-(2*8) =104px
+       height:80-(2*20)-(2*8) =24px  */
+}
+</style>
+</head>
+<body>
+<div id ="A"></div>
+<div id ="B"></div>
+</body>
+</html>
+

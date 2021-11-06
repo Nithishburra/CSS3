@@ -1,0 +1,305 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+* {
+   margin: 0;
+   padding: 0;
+}
+body {
+   min-height: 100vh;
+}
+
+/* HEADER PART START */
+.header {
+   height: 75px;
+   display: flex;
+   font-size: 17px;
+   align-items: center;
+   color: #ffffff;
+   background-color: #518017;
+   justify-content: space-between;
+}
+.tittle {
+   font-size: 40px;
+   font-weight: 600;
+   margin: 8px 15px 6px 40px;
+   font-family: 'Cinzel Decorative', cursive;
+}
+.wrap {
+   width: 30%;
+   margin-right: 20px;
+}
+.search {
+   display: flex;
+   position: relative;
+}
+.search-term {
+   width: 100%;
+   padding: 5px 15px;
+   border: 2px solid #3f6412;
+   border-right: none;
+   border-radius: 10px 0 0 10px;
+}
+.search-term:focus {
+   color: #3f6412;
+}
+.search-btn {
+   width: 45px;
+   height: 40px;
+   font-size: 20px;
+   color: #ffffff;
+   background: #3f6412;
+   border: 1px solid #3f6412;
+   border-radius: 0 10px 10px 0;
+}
+.social-media {
+   padding: 25px;
+   margin: 0 20px;
+   font-size: 20px;
+}
+.social-media i {
+   padding: 5px;
+   margin-right: 3px;
+   cursor: pointer;
+   border-radius: 20px;
+   border: 2px solid #ffffff;
+}
+.fb:hover {
+   color: #1196f5;
+   background-color: #ffffff;
+   border: 2px solid #1196f5;
+}
+.yt:hover {
+   color: #ff0000;
+   background-color: #ffffff;
+   border: 2px solid #ff0000;
+}
+.ig:hover {
+   color: #e1306c;
+   background-color: #ffffff;
+   border: 2px solid #e1306c;
+}
+.tw:hover {
+   color: #1da1f2;
+   background-color: #ffffff;
+   border: 2px solid #1da1f2;
+}
+/* HEADER PART END */
+
+/* NAV BAR START */
+.nav-bar {
+   height: 75px;
+   width: 100%;
+   margin-right: 30px;
+   border-bottom: 2px solid #518017;
+   background-color: #ffffff;
+   /* background: linear-gradient(to left, #518017, #ffffff); */
+}
+.nav-bar ul li {
+   list-style: none;
+   text-align: center;
+}
+li a {
+   color: #252525;
+   margin: 15px;
+   padding: 8px 12px;
+   cursor: pointer;
+   text-decoration: none;
+   position: relative;
+   display: inline-block;
+   font-size: 20px;
+   font-weight: 600;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+li a:hover {
+   color: #518017;
+}
+/* NAV BAR END */
+
+/* BANNER PART START */
+.carousel-inner h1 {
+   font-size: 60px;
+   font-weight: 700;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.carousel-inner p {
+   font-size: 70px;
+   font-weight: 700;
+   line-height: 85px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+/* BANNER PART END */
+
+/* ABOUTUS PART START */
+.title {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.section-title {
+   position: relative;
+   color: #518017;
+   margin: 55px;
+   font-size: 2.2em;
+   font-weight: 800;
+}
+.section-title:before {
+   content: '';
+   position: absolute;
+   top: 56px;
+   left: 50%;
+   width: 140px;
+   height: 4px;
+   background: #518017;
+   transform: translateX(-50%);
+}
+.section-title:after {
+   content: '';
+   position: absolute;
+   top: 50px;
+   left: 50%;
+   width: 15px;
+   height: 15px;
+   border-radius: 50%;
+   background: #518017;
+   transform: translateX(-50%);
+}
+.about {
+   background-color: #ffffff;
+}
+.about .content {
+   position: relative;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   margin-top: 20px;
+}
+.about .content .col-left {
+   position: relative;
+   width: 45%;
+}
+.about .content .col-right {
+   position: relative;
+   width: 45%;
+}
+.about .content .col-left .img-card {
+   position: relative;
+   width: 100%;
+   margin-left: 55px;
+   min-height: 450px;
+}
+.about .content .col-left .img-card img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 50px;
+}
+.about .content .col-right .content-title {
+   font-size: 2em;
+   font-weight: 800;
+   color: #414141;
+   margin-bottom: 20px;
+}
+.about .content .col-right .paragraph-text {
+   font-size: 1.2em;
+   font-weight: 500;
+   color: #414141;
+   margin: 35px 40px 0 0;
+   line-height: normal;
+}
+/* ABOUTUS PART END */
+
+/* CONTACTUS PART START */
+.contact .content {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   flex-direction: column;
+   margin-top: 10px;
+}
+.contact .content .row {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   margin-bottom: 50px;
+   flex-direction: row;
+}
+.contact .content .row .card {
+   width: 295px;
+   margin: 20px;
+   padding: 25px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #ffffff;
+   flex-direction: column;
+   box-shadow: 0px 15px 25px rgb(216 208 208);
+   border-radius: 10px;
+}
+.contact .content .row .card .contact-icon-one {
+   color: #518017;
+   font-size: 4em;
+   text-align: center;
+   transition: transform 0.5s ease;
+}
+.contact .content .row .card .contact-icon-two {
+   color: #518017;
+   font-size: 4em;
+   text-align: center;
+   transition: transform 0.5s ease;
+}
+.contact .content .row .card .contact-icon-three {
+   color: #518017;
+   font-size: 4em;
+   text-align: center;
+   transition: transform 0.5s ease;
+}
+.contact .content .row .card:hover .contact-icon-one {
+   transform: translateY(-10px);
+}
+.contact .content .row .card:hover .contact-icon-two {
+   transform: translateY(-10px);
+}
+.contact .content .row .card:hover .contact-icon-three {
+   transform: translateY(-10px);
+}
+.contact .content .row .card .info {
+   text-align: center;
+}
+.contact .content .row .card .info h3 {
+   color: #272727;
+   font-size: 1.2em;
+   font-weight: 700;
+   margin: 10px;
+}
+.contact .content .row .card .info span {
+   color: #808080;
+   font-weight: 500;
+}
+.contact .content h3 {
+   color: #272727;
+   font-size: 25px;
+   font-weight: 700;
+   text-align: center;
+   margin: -25px 0 30px 0;
+}
+/* CONTACTUS PART END */
+
+/* FOOTER PART START */
+.footer {
+   padding: 1em;
+   display: flex;
+   color: #ffffff;
+   background-color: #518017;
+   justify-content: space-between;
+}
+.footer p {
+   font-size: 16px;
+   margin: 0px 30px 0 25px;
+}
+/* FOOTER PART END */

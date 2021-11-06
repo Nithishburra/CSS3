@@ -1,0 +1,137 @@
+*{
+   margin: 0px;
+   padding: 0px;
+
+   body{
+
+       box-sizing: border-box;
+       font-family: Arial, Helvetica, sans-serif;
+   }
+}
+.container{
+   height: 100vh;
+
+}
+   .header{
+       display: flex;
+       height:10%;
+       justify-content: space-evenly;
+       background-color: cadetblue;
+       align-items: center;
+        
+
+    &_menu{
+
+        display: flex;
+        gap:15px;
+        font-size: 1.5vw;
+      
+    }
+  
+   &_logo{
+        font-size: 3vw;
+
+       
+    }
+
+    &_icons{
+        font-size: 1.6vw;
+        display: flex;
+        gap: 12px;
+        
+    }
+   
+}
+
+
+.main{
+    display: flex;
+    height: 80%;
+
+    &_img{
+       width:50%;
+      background-image: url('./images/logo.jpg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: left center;
+     
+    }
+    &_text{
+        width:50%;
+       color:olive;
+       font-size:2vw;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       row-gap: 15px;
+         
+
+       &_1{
+           font-size: 8vw;
+       }
+
+       &_2,&_3,&_4{
+        font-size:3vw;
+    
+       }
+    }
+
+}
+
+
+.footer{
+    display: flex;
+    height: 10%;
+    background-color: cadetblue;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:650px){
+
+   .header{
+        justify-content: center;
+         
+ }
+.main{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &_img{
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        
+    }  
+    &_text{
+       
+        justify-content:center;
+        align-items:flex-start;
+           
+       &_1{
+        font-size: 10vw;
+    }
+
+    &_2,&_3,&_4{
+     font-size:3vw;
+ 
+    }
+
+
+
+
+    }
+}
+.footer{
+    display: flex;
+    height: 10%;
+    background-color: cadetblue;
+    align-items: center;
+    justify-content: center;
+}
+
+
+}
+
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3</title>
+<style>
+    img{
+        width:600px;
+      
+    }
+   .parent{
+       display: grid;
+     
+       grid-template-columns: 1fr 2fr;
+   }
+   .A{
+       grid-column: 1/3;
+       grid-row: 2/3;
+   }
+   .B{
+       grid-column:1/3;
+       grid-row: 3/4;
+     
+      
+   }
+   .content{
+       grid-column: 3/4;
+       grid-row: 2/4;
+   }
+   .parent>div:nth-child(1){
+       background-color: cornflowerblue;
+   }
+   .parent>div:nth-child(2){
+       background-color: crimson;
+   }
+
+</style>
+</head>
+<body>
+<div class="parent">
+   <div class="A">
+       A
+   </div>
+   <div class="B">
+       B
+   </div>
+   <div class="content">
+     <img src="p2.jpg">
+   </div>
+</div>
+</body>
+</html>
